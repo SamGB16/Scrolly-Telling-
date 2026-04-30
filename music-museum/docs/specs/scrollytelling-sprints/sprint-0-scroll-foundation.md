@@ -35,8 +35,8 @@ the element in. No external animation libraries.
 - Accent color token defined in globals.css
 
 ## Completion Checklist
-- [ ] ScrollReveal.tsx created in components/ui/
-- [ ] reveal and visible CSS classes in globals.css
-- [ ] Accent color token added to globals.css
-- [ ] npm run build passes
-- [ ] npm run lint passes
+- [x] ScrollReveal.tsx created in components/ui/
+- [x] reveal and visible CSS classes in globals.css
+- [x] Accent color token added to globals.css
+- [x] npm run build passes
+- [x] npm run lint passes

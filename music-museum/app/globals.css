@@ -8,6 +8,9 @@
   --space-unit: 8px;
   --grid-max: 1200px;
   --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Accent color */
+  --color-accent: #D4A853;
 }
 
 @theme inline {
@@ -31,4 +34,32 @@ body {
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Scroll reveal — base state: hidden */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.slide-up {
+  transform: translateY(2rem);
+}
+
+.reveal.slide-left {
+  transform: translateX(-2rem);
+}
+
+/* Visible state: element has entered the viewport */
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
