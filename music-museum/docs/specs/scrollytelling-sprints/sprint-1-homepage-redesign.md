@@ -54,11 +54,11 @@ scrolls. Each section should feel like a chapter reveal.
 - Era cards link to correct exhibit pages
 
 ## Completion Checklist
-- [ ] Full screen hero with scroll indicator
-- [ ] Introduction section with ScrollReveal
-- [ ] Five era preview sections with ScrollReveal
-- [ ] Call to action with accent color button
-- [ ] Accent color applied to key elements
-- [ ] All era cards link to exhibit pages
-- [ ] npm run build passes
-- [ ] npm run lint passes
+- [x] Full screen hero with scroll indicator
+- [x] Introduction section with ScrollReveal
+- [x] Five era preview sections with ScrollReveal
+- [x] Call to action with accent color button
+- [x] Accent color applied to key elements
+- [x] All era cards link to exhibit pages
+- [x] npm run build passes
+- [x] npm run lint passes

@@ -50,6 +50,10 @@ body {
   transform: translateX(-2rem);
 }
 
+.reveal.slide-right {
+  transform: translateX(2rem);
+}
+
 /* Visible state: element has entered the viewport */
 .reveal.visible {
   opacity: 1;
