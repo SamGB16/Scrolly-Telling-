@@ -1,89 +1,63 @@
-# Music Consumption Museum
+# Music Consumption Museum — Scrollytelling Edition
 
-A museum-style website exploring the evolution of music consumption, from the phonograph and vinyl record to modern streaming platforms.
+A redesigned museum-style website exploring the evolution of music
+consumption, now featuring a scrollytelling experience where the
+story unfolds step by step as you scroll.
 
 ## Live Site
+https://SamGB16.github.io/Scrolly-Telling-/
+
+## Original Project
+The original static version of this museum can be found at:
 https://SamGB16.github.io/music-museum/
 
-## Project Overview
-This project is a curated museum exhibition that guides visitors
-through five eras of music consumption technology. Each exhibit page represents a different room in the museum, telling the story of how humanity has listened to music from 1877 to the present day.
+## What's New in This Version
+This redesign transforms the static museum into an immersive
+scrollytelling experience:
+- Step-by-step narrative scroll on every page
+- Scroll-triggered animations using Intersection Observer API
+- Amber/gold accent color (#D4A853) highlighting key moments
+- Full-screen era heroes with dramatic reveals
+- Next era navigation linking all five exhibits in sequence
 
-## Design Style — Swiss (International Style)
-The site uses the Swiss design style, characterized by:
-- Clean, minimal layouts with strong grid systems
-- Clear typographic hierarchy with generous whitespace
-- Limited color palette — dark backgrounds with high contrast text
-- Content and structure take priority over decoration
+## Design Framework
 
-This style grounds the site in a recognizable visual tradition that feels authoritative and museum-like, letting the content speak without visual noise.
+### Design Style — Swiss + Animation
+Retained the Swiss grid and typography. Added scroll-triggered
+animations, full-screen sections, and a warm amber accent color
+to highlight key moments in the narrative.
 
-## Brand Archetype — The Explorer
-The site follows the Explorer archetype. This shapes:
-- Tone: curious, inviting, forward-moving
-- Vocabulary: journey, discovery, room, exhibition
-- Structure: each era is a new room to explore
-- Emotional character: wonder at how far we have come
+### Cialdini Principle — Social Proof
+Social proof stats are now revealed dramatically as the visitor
+scrolls to them, making the cultural impact of each era feel
+more significant.
 
-The Explorer archetype was chosen because music consumption is
-a universal human journey and everyone has a relationship with how
-they listen to music.
-
-## Cialdini Principle — Social Proof
-The site applies Social Proof by highlighting adoption data on every exhibit page and era card:
-- Vinyl: Over 100M records sold annually at peak
-- Walkman: 400M+ units sold worldwide
-- CD: 2.4B CDs sold in peak year 1999
-- iPod: 450M+ units sold before discontinuation
-- Spotify: 600M+ users worldwide
-
-Showing how widely each format was adopted validates the cultural
-importance of each era and encourages visitors to engage more deeply with the content.
+### Brand Archetype — The Explorer
+The scrollytelling format reinforces the Explorer archetype —
+the visitor is literally on a journey, moving through time
+with each scroll step.
 
 ## AI Orchestration Process
-This project follows a spec-driven development workflow inspired by the reference repository. The core principle is that AI is a tool for execution, not decision-making.
+This project follows the same spec-driven development workflow
+as the original museum.
 
 ### Workflow
-```
-Spec → QA Spec → Sprint Doc → Implement → QA → Commit
-```
-
-### Why This Process
-- Prevents drift — AI stays within bounded sprint scope
-- Preserves intent — decisions live in files not chat history
-- Enables verification — each sprint has explicit acceptance criteria
-- Improves quality — QA is a separate deliberate step
-
+## Spec -> Sprint Doc -> Implememt -> QA -> Commit
 ### Sprints Completed
 
 | Sprint | Name | Scope |
 |---|---|---|
-| 0 | Scaffold | Next.js setup, Tailwind, folder structure |
-| 1 | UI Foundation | Card, Panel, SectionHeading components |
-| 2 | Homepage | Exhibition entrance, era cards, social proof |
-| 3 | Exhibit Pages | Five era pages with artifacts and copy |
-| 4 | QA & Polish | Smithsonian curator review, polish |
-| 5 | Images | Hero images for all exhibit pages |
-
-### Change Notes
-Small, low-risk changes used the lightweight change note path:
-- Change 001: Homepage hero image
-- Change 002: Fix image paths for GitHub Pages deployment
-
-### Smithsonian Curator Review
-As required by the assignment, AI reviewed the site as a Smithsonian curator evaluating narrative flow, artifact presentation, educational value, emotional engagement, and visual coherence. This review produced the "Why This Matters" section on each exhibit page and improvements to the Explorer-tone copy throughout the site.
-
-### Verification
-Each sprint was verified with:
-- npm run build
-- npm run lint
-- Visual browser check against the sprint checklist
+| 0 | Scroll Foundation | Intersection Observer, CSS animations, accent color |
+| 1 | Homepage Redesign | Full scrollytelling homepage |
+| 2 | Exhibit Pages | Scrollytelling on all five era pages |
+| 3 | Color & Polish | Accent color, animation refinement, curator QA |
 
 ## Tech Stack
 - Next.js 16
 - React 19
 - Tailwind CSS v4
 - TypeScript
+- Intersection Observer API for scroll animations
 - Deployed via GitHub Actions to GitHub Pages
 
 ## Sources
