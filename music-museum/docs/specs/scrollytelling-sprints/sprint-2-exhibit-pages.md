@@ -81,12 +81,12 @@ Each exhibit page should follow this scroll step sequence:
 - Each page follows the six step scroll structure
 
 ## Completion Checklist
-- [ ] /vinyl page follows scroll step structure
-- [ ] /cassette page follows scroll step structure
-- [ ] /cd page follows scroll step structure
-- [ ] /ipod page follows scroll step structure
-- [ ] /streaming page follows scroll step structure
-- [ ] ScrollReveal used on all animated sections
-- [ ] Accent color applied to headings
-- [ ] npm run build passes
-- [ ] npm run lint passes
+- [x] /vinyl page follows scroll step structure
+- [x] /cassette page follows scroll step structure
+- [x] /cd page follows scroll step structure
+- [x] /ipod page follows scroll step structure
+- [x] /streaming page follows scroll step structure
+- [x] ScrollReveal used on all animated sections
+- [x] Accent color applied to headings
+- [x] npm run build passes
+- [x] npm run lint passes
