@@ -94,7 +94,7 @@ export default function Home() {
               </div>
               <div className="md:text-right">
                 <p className="text-sm text-foreground/70">{item.stat}</p>
-                <p className="mt-3 text-xs font-bold uppercase tracking-widest text-foreground/30 transition-colors group-hover:text-foreground/70">
+                <p className="mt-3 text-xs font-bold uppercase tracking-widest text-foreground/30 transition-colors group-hover:text-[#D4A853]">
                   Enter exhibit →
                 </p>
               </div>

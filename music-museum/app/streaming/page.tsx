@@ -26,7 +26,12 @@ export default function StreamingPage() {
           <p className="text-xs font-bold uppercase tracking-widest text-white/50">
             Scroll to explore
           </p>
-          <span className="mt-2 text-white/50 text-xl">↓</span>
+          <span
+            className="mt-2 animate-bounce text-xl"
+            style={{ color: "#D4A853" }}
+          >
+            ↓
+          </span>
         </div>
       </section>
 
@@ -47,9 +52,12 @@ export default function StreamingPage() {
       </ScrollReveal>
 
       {/* Step 3 — Artifact */}
-      <ScrollReveal animation="slide-up">
-        <section className="w-full px-8 py-16 md:px-16 md:py-24 border-b border-foreground/10">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-foreground/40 mb-6">
+      <section className="w-full px-8 py-16 md:px-16 md:py-24 border-b border-foreground/10">
+        <ScrollReveal animation="slide-up" delay={0}>
+          <h2
+            className="text-xs font-bold uppercase tracking-widest mb-6"
+            style={{ color: "#D4A853" }}
+          >
             The Device
           </h2>
           <h3 className="text-3xl font-bold uppercase tracking-tight mb-6">
@@ -64,6 +72,8 @@ export default function StreamingPage() {
             real time. The curator is now a machine — and it knows your taste
             better than you do.
           </p>
+        </ScrollReveal>
+        <ScrollReveal animation="slide-up" delay={200}>
           <p
             className="max-w-2xl text-base leading-relaxed"
             style={{ color: "#D4A853" }}
@@ -73,15 +83,20 @@ export default function StreamingPage() {
             ads — a direct answer to a decade of piracy that had hollowed out
             the music industry.
           </p>
-        </section>
-      </ScrollReveal>
+        </ScrollReveal>
+      </section>
 
       {/* Step 4 — Social Proof */}
-      <ScrollReveal animation="slide-left">
-        <section className="w-full px-8 py-16 md:px-16 md:py-24 border-b border-foreground/10">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-foreground/40 mb-6">
+      <section className="w-full px-8 py-16 md:px-16 md:py-24 border-b border-foreground/10">
+        <ScrollReveal animation="slide-left" delay={0}>
+          <h2
+            className="text-xs font-bold uppercase tracking-widest mb-6"
+            style={{ color: "#D4A853" }}
+          >
             The Impact
           </h2>
+        </ScrollReveal>
+        <ScrollReveal animation="slide-left" delay={150}>
           <p
             className="text-5xl font-bold uppercase tracking-tight leading-none mb-6 md:text-7xl"
             style={{ color: "#D4A853" }}
@@ -93,8 +108,8 @@ export default function StreamingPage() {
             tastemaker in history, more powerful than any radio DJ, magazine, or
             record label that came before it.
           </p>
-        </section>
-      </ScrollReveal>
+        </ScrollReveal>
+      </section>
 
       {/* Step 5 — Why This Matters */}
       <ScrollReveal animation="fade">
@@ -124,7 +139,7 @@ export default function StreamingPage() {
         <section className="w-full px-8 py-12 md:px-16 flex items-center justify-between">
           <Link
             href="/"
-            className="text-xs font-bold uppercase tracking-widest text-foreground/50 hover:text-foreground transition-colors"
+            className="text-xs font-bold uppercase tracking-widest text-foreground/50 hover:text-[#D4A853] transition-colors"
           >
             ← Back to Exhibition
           </Link>

@@ -26,7 +26,12 @@ export default function CdPage() {
           <p className="text-xs font-bold uppercase tracking-widest text-white/50">
             Scroll to explore
           </p>
-          <span className="mt-2 text-white/50 text-xl">↓</span>
+          <span
+            className="mt-2 animate-bounce text-xl"
+            style={{ color: "#D4A853" }}
+          >
+            ↓
+          </span>
         </div>
       </section>
 
@@ -47,9 +52,12 @@ export default function CdPage() {
       </ScrollReveal>
 
       {/* Step 3 — Artifact */}
-      <ScrollReveal animation="slide-up">
-        <section className="w-full px-8 py-16 md:px-16 md:py-24 border-b border-foreground/10">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-foreground/40 mb-6">
+      <section className="w-full px-8 py-16 md:px-16 md:py-24 border-b border-foreground/10">
+        <ScrollReveal animation="slide-up" delay={0}>
+          <h2
+            className="text-xs font-bold uppercase tracking-widest mb-6"
+            style={{ color: "#D4A853" }}
+          >
             The Device
           </h2>
           <h3 className="text-3xl font-bold uppercase tracking-tight mb-6">
@@ -63,6 +71,8 @@ export default function CdPage() {
             sold 2.4 billion CDs in a single year — a number that will never be
             matched in physical media again.
           </p>
+        </ScrollReveal>
+        <ScrollReveal animation="slide-up" delay={200}>
           <p
             className="max-w-2xl text-base leading-relaxed"
             style={{ color: "#D4A853" }}
@@ -71,15 +81,20 @@ export default function CdPage() {
             by Sony and Philips. It could hold 74 minutes of audio — reportedly
             enough to fit Beethoven&apos;s Ninth Symphony.
           </p>
-        </section>
-      </ScrollReveal>
+        </ScrollReveal>
+      </section>
 
       {/* Step 4 — Social Proof */}
-      <ScrollReveal animation="slide-left">
-        <section className="w-full px-8 py-16 md:px-16 md:py-24 border-b border-foreground/10">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-foreground/40 mb-6">
+      <section className="w-full px-8 py-16 md:px-16 md:py-24 border-b border-foreground/10">
+        <ScrollReveal animation="slide-left" delay={0}>
+          <h2
+            className="text-xs font-bold uppercase tracking-widest mb-6"
+            style={{ color: "#D4A853" }}
+          >
             The Impact
           </h2>
+        </ScrollReveal>
+        <ScrollReveal animation="slide-left" delay={150}>
           <p
             className="text-5xl font-bold uppercase tracking-tight leading-none mb-6 md:text-7xl"
             style={{ color: "#D4A853" }}
@@ -91,8 +106,8 @@ export default function CdPage() {
             never be surpassed, and a digital format that unwittingly seeded
             its own disruption.
           </p>
-        </section>
-      </ScrollReveal>
+        </ScrollReveal>
+      </section>
 
       {/* Step 5 — Why This Matters */}
       <ScrollReveal animation="fade">
@@ -121,13 +136,13 @@ export default function CdPage() {
         <section className="w-full px-8 py-12 md:px-16 flex items-center justify-between">
           <Link
             href="/"
-            className="text-xs font-bold uppercase tracking-widest text-foreground/50 hover:text-foreground transition-colors"
+            className="text-xs font-bold uppercase tracking-widest text-foreground/50 hover:text-[#D4A853] transition-colors"
           >
             ← Back to Exhibition
           </Link>
           <Link
             href="/ipod"
-            className="text-xs font-bold uppercase tracking-widest text-foreground/50 hover:text-foreground transition-colors"
+            className="text-xs font-bold uppercase tracking-widest text-foreground/50 hover:text-[#D4A853] transition-colors"
           >
             Next Era: MP3 &amp; iPod →
           </Link>
